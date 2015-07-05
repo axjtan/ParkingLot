@@ -10,17 +10,17 @@
 
 @implementation Student
 
--(float)calculateParkingFees:(BOOL)qualifiedByDistance{
+-(float)calculateParkingFees:(BOOL)qualifiedByDistance grade:(int)studentGrade{
     
     float parkingDiscount = 0.0;
     float parkingCharge = (float) kPARKING_CHARGES;
     
     if (qualifiedByDistance) {
         parkingDiscount = 0.1;
-        if(self.grade>=70){
+        if(studentGrade>=70){
             parkingDiscount += 0.1;
         }
-        else if(self.grade>=60 && self.grade<70){
+        else if(studentGrade>=60 && studentGrade<70){
             parkingDiscount += 0.05;
         }
         

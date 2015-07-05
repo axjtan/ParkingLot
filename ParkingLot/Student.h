@@ -21,7 +21,7 @@
 @property BOOL isLessThan30Km;
 @property float parkingFee;
 
--(float)calculateParkingFees:(BOOL)qualifiedByDistance; // Instance Method due to "-"
+-(float)calculateParkingFees:(BOOL)qualifiedByDistance grade:(int)studentGrade; // Instance Method due to "-"
                                                         // Class Method due to "+"
 
 @end

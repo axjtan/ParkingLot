@@ -71,7 +71,7 @@ int main(int argc, const char * argv[]) {
         // For-each e.g. for (ClassType *ObjectType in CollectionType)
         for (Student *eachStudent in students){
             // Calling Method on an Object
-            float parkingAmount = [eachStudent calculateParkingFees:eachStudent.isLessThan30Km];  // Instance Method
+            float parkingAmount = [eachStudent calculateParkingFees:eachStudent.isLessThan30Km grade:eachStudent.grade];  // Instance Method
             NSLog(@"%@'s parking fees is %.2f\n",eachStudent.firstName, parkingAmount);
         }
         
