@@ -27,7 +27,7 @@ int main(int argc, const char * argv[]) {
         Student *roger = [[Student alloc]init];
         roger.firstName = @"Roger";
         roger.lastName = @"Lim";
-        roger.grade = 75;
+        roger.grade = 50;
         roger.isLessThan30Km = NO;
         
         // Creat a student with name Vajira
