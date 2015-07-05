@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Student.h"
+#import "UniversityStudent.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -15,63 +15,63 @@ int main(int argc, const char * argv[]) {
         // Create objects
         
         // Create 'john'(object) from 'Student'(Class)
-        Student *john = [[Student alloc]init]; // Class Method
+        UniversityStudent *john = [[UniversityStudent alloc]init]; // Class Method
         
         // Calling property of an Object
         john.firstName = @"John";
         john.lastName = @"Tan";
-        john.grade = 75;
+        john.score = 75;
         john.isLessThan30Km = YES;
         
         // Creat a student with name Roger
-        Student *roger = [[Student alloc]init];
+        UniversityStudent *roger = [[UniversityStudent alloc]init];
         roger.firstName = @"Roger";
         roger.lastName = @"Lim";
-        roger.grade = 50;
+        roger.score = 50;
         roger.isLessThan30Km = NO;
         
         // Creat a student with name Vajira
-        Student *vijira = [[Student alloc]init];
+        UniversityStudent *vijira = [[UniversityStudent alloc]init];
         vijira.firstName = @"Vajira";
         vijira.lastName = @"Christoper";
-        vijira.grade = 75;
+        vijira.score = 75;
         vijira.isLessThan30Km = YES;
         
         // Creat a student with name YanBin
-        Student *yanbin = [[Student alloc]init];
+        UniversityStudent *yanbin = [[UniversityStudent alloc]init];
         yanbin.firstName = @"YanBin";
         yanbin.lastName = @"Wong";
-        yanbin.grade = 70;
+        yanbin.score = 70;
         yanbin.isLessThan30Km = NO;
         
         // Creat a student with name Alan
-        Student *alan = [[Student alloc]init];
+        UniversityStudent *alan = [[UniversityStudent alloc]init];
         alan.firstName = @"Alan";
         alan.lastName = @"Tan";
-        alan.grade = 65;
+        alan.score = 65;
         alan.isLessThan30Km = YES;
         
         // Creat a student with name Roshan
-        Student *roshan =[[Student alloc]init];
+        UniversityStudent *roshan =[[UniversityStudent alloc]init];
         roshan.firstName = @"Roshan";
         roshan.lastName = @"Prakash";
-        roshan.grade = 60;
+        roshan.score = 60;
         roshan.isLessThan30Km = NO;
         
         // Creat a student with name Sanat
-        Student *sanat =[[Student alloc]init];
+        UniversityStudent *sanat =[[UniversityStudent alloc]init];
         sanat.firstName = @"Sanat";
         sanat.lastName = @"Beckham";
-        sanat.grade = 55;
+        sanat.score = 55;
         sanat.isLessThan30Km = YES;
 
         // An array of names, CollectionType
         NSArray *students =@[john, roger, vijira, yanbin, alan, roshan, sanat];
         
         // For-each e.g. for (ClassType *ObjectType in CollectionType)
-        for (Student *eachStudent in students){
+        for (UniversityStudent *eachStudent in students){
             // Calling Method on an Object
-            float parkingAmount = [eachStudent calculateParkingFees:eachStudent.isLessThan30Km grade:eachStudent.grade];  // Instance Method
+            float parkingAmount = [eachStudent calculateParkingFeesByQualifiedDistance:eachStudent.isLessThan30Km andGrade:eachStudent.score];  // Instance Method
             NSLog(@"%@'s parking fees is %.2f\n",eachStudent.firstName, parkingAmount);
         }
         

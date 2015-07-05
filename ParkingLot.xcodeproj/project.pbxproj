@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D24123BA1B48EAD0009802D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D24123B91B48EAD0009802D4 /* main.m */; };
-		D24123C21B48EAE7009802D4 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = D24123C11B48EAE7009802D4 /* Student.m */; };
+		D24123C21B48EAE7009802D4 /* UniversityStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = D24123C11B48EAE7009802D4 /* UniversityStudent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		D24123B61B48EAD0009802D4 /* ParkingLot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ParkingLot; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24123B91B48EAD0009802D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D24123C01B48EAE7009802D4 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
-		D24123C11B48EAE7009802D4 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		D24123C01B48EAE7009802D4 /* UniversityStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniversityStudent.h; sourceTree = "<group>"; };
+		D24123C11B48EAE7009802D4 /* UniversityStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniversityStudent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				D24123B91B48EAD0009802D4 /* main.m */,
-				D24123C01B48EAE7009802D4 /* Student.h */,
-				D24123C11B48EAE7009802D4 /* Student.m */,
+				D24123C01B48EAE7009802D4 /* UniversityStudent.h */,
+				D24123C11B48EAE7009802D4 /* UniversityStudent.m */,
 			);
 			path = ParkingLot;
 			sourceTree = "<group>";
@@ -124,7 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D24123BA1B48EAD0009802D4 /* main.m in Sources */,
-				D24123C21B48EAE7009802D4 /* Student.m in Sources */,
+				D24123C21B48EAE7009802D4 /* UniversityStudent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +241,7 @@
 				D24123BF1B48EAD0009802D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

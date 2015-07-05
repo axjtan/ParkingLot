@@ -10,18 +10,18 @@
 
 #define kPARKING_CHARGES 10;
 
-@interface Student : NSObject
+@interface UniversityStudent : NSObject
 
 // Pointer before variable name when accessing an object
 // When using a Class Type, need to add a '*' before the variable
 @property NSString *firstName;
 @property NSString *lastName;
 
-@property int grade;
+@property int score;
 @property BOOL isLessThan30Km;
 @property float parkingFee;
 
--(float)calculateParkingFees:(BOOL)qualifiedByDistance grade:(int)studentGrade; // Instance Method due to "-"
+-(float)calculateParkingFeesByQualifiedDistance:(BOOL)qualifiedByDistance andGrade:(int)studentGrade; // Instance Method due to "-"
                                                         // Class Method due to "+"
 
 @end

@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 NP ECE BME Centre. All rights reserved.
 //
 
-#import "Student.h"
+#import "UniversityStudent.h"
 
-@implementation Student
+@implementation UniversityStudent
 
--(float)calculateParkingFees:(BOOL)qualifiedByDistance grade:(int)studentGrade{
+-(float)calculateParkingFeesByQualifiedDistance:(BOOL)qualifiedByDistance andGrade:(int)studentGrade{
     
     float parkingDiscount = 0.0;
     float parkingCharge = (float) kPARKING_CHARGES;
